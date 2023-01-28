@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="18+.css">
+    <title>Form</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>WW3 Enlist Form</h1>
+            <form id="submitForm" onsubmit="return validateForm()">
+                <label for="f_name">Firstname:</label>
+                <input type="text" name="f_name" id="f_name" required>
+                
+                <label for="l_name">Lastname:</label>
+                <input type="text" name="l_name" id="l_name" required>
+                
+                <label for="bday">Date of birth:</label>
+                <input type="date" name="bday" id="bday" required>
+                
+                <label for="pass">Password:</label>
+                <input type="password" name="pass" id="pass1" required>
+                <label for="pass">Confirm password:</label>
+                <input type="password" name="pass" id="pass2" required>
+                
+                <div id="error"></div>
+    
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        
+
+        
+        <div id="dialog" style="display: none;">
+            <h3 id="dialogtext">Congrats! You are being enroled!</h3>
+            <button type="button" id="dialogbtn" onclick="return enroll()">WAR!!</button>
+        </div>
+        
+        <div id="a-thing" style="display: none;">
+            <video src="media/natovawe.mp4" id="vid_bkg" autoplay muted></video>
+            
+            <img src="media/chungus.png" id="img_1" alt="">
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
