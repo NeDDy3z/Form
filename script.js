@@ -128,6 +128,7 @@ function correctSubmit() {
 
     disableFormInput(true);
 
+    /*
     if (calc >= 18) {
         ring.play();
 
@@ -144,6 +145,10 @@ function correctSubmit() {
         dialogBtn.innerText = "Continue";
         dialog.style.display = "inline";
     }
+    */
+    dialogText.innerText = "Success!";
+    dialogBtn.innerText = "Continue";
+    dialog.style.display = "inline";
 }
 
 
